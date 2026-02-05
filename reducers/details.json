@@ -1,0 +1,31 @@
+{
+  "root": {
+    "path": "",
+    "on_null": "return_empty"
+  },
+  "pipeline": [
+    {
+      "op": "copy",
+      "from": "body.results[].severity",
+      "to": "reduced_results.results_severity"
+    },
+    {
+      "op": "copy",
+      "from": "body.results[].confidence",
+      "to": "reduced_results.results_confidence"
+    },
+    {
+      "op": "copy",
+      "from": "body.results[].threat_types",
+      "to": "reduced_results.results_threat_types"
+    },
+    {
+      "op": "prune",
+      "strategy": "empty_values",
+      "target": "reduced_results"
+    }
+  ],
+  "output": {
+    "result": "$working.reduced_results"
+  }
+}

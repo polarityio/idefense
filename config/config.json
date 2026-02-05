@@ -4,7 +4,15 @@
   "acronym": "iDEF",
   "defaultColor": "light-blue",
   "description": "iDefense Security Intelligence",
-  "entityTypes": ["IPv4", "domain", "email", "url", "MD5", "SHA1", "SHA256"],
+  "entityTypes": [
+    "IPv4",
+    "domain",
+    "email",
+    "url",
+    "MD5",
+    "SHA1",
+    "SHA256"
+  ],
   "customTypes": [
     {
       "key": "cve",
@@ -15,7 +23,9 @@
       "regex": "[aho](:[A-Za-z0-9\\._\\-~]*(:[A-Za-z0-9\\._\\-~]*(:[A-Za-z0-9\\._\\.\\-~]*(:[A-Za-z0-9\\._\\-~]*(:[A-Za-z0-9\\._\\-~]*(:[A-Za-z0-9\\._\\-~]*)?)?)?)?))"
     }
   ],
-  "styles": ["./styles/idefense.less"],
+  "styles": [
+    "./styles/idefense.less"
+  ],
   "block": {
     "component": {
       "file": "./components/block.js"
@@ -116,5 +126,10 @@
       "userCanEdit": false,
       "adminOnly": false
     }
-  ]
+  ],
+  "reducer": {
+    "details": {
+      "file": "./reducers/details.json"
+    }
+  }
 }

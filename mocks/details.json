@@ -1,0 +1,100 @@
+{
+  "body": {
+    "results": [
+      {
+        "uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "severity": 5,
+        "confidence": 95,
+        "threat_types": [
+          "malware",
+          "trojan",
+          "banking_trojan"
+        ],
+        "created_on": "2024-01-15T10:30:00Z",
+        "last_modified": "2024-01-16T02:15:00Z",
+        "last_published": "2024-01-16T03:00:00Z",
+        "key": {
+          "values": ["192.168.1.100"]
+        },
+        "links": [
+          {
+            "uuid": "link-uuid-1",
+            "key": "malicious-domain.com",
+            "type": "domain",
+            "relationship": "communicates_with"
+          }
+        ],
+        "last_seen_as": [
+          "C2 Server",
+          "Malware Distribution"
+        ]
+      },
+      {
+        "uuid": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+        "severity": 3,
+        "confidence": 78,
+        "threat_types": [
+          "phishing",
+          "credential_harvesting"
+        ],
+        "created_on": "2024-01-10T08:20:00Z",
+        "last_modified": "2024-01-14T16:45:00Z",
+        "last_published": "2024-01-15T09:30:00Z",
+        "filenames": [
+          "invoice.exe",
+          "payment_details.scr"
+        ],
+        "file_class": "executable",
+        "filetype": "PE32",
+        "file_extenstion": "exe",
+        "packers": [
+          "UPX",
+          "Themida"
+        ]
+      },
+      {
+        "uuid": "c3d4e5f6-a7b8-9012-cdef-123456789012",
+        "severity": 4,
+        "confidence": 88,
+        "threat_types": [
+          "ransomware",
+          "cryptolocker"
+        ],
+        "created_on": "2023-12-20T14:00:00Z",
+        "last_modified": "2024-01-12T11:30:00Z",
+        "subject": "Urgent: Account Verification Required",
+        "sender": "noreply@phishing-site.com",
+        "to": ["victim@company.com"],
+        "body": "Click here to verify your account immediately...",
+        "raw_headers": "Received: from malicious-server.net..."
+      },
+      {
+        "uuid": "d4e5f6a7-b8c9-0123-def0-123456789abc",
+        "severity": 2,
+        "confidence": 65,
+        "threat_types": [
+          "suspicious_activity"
+        ],
+        "product": "apache",
+        "vendor": "apache_software_foundation",
+        "version": "2.4.49",
+        "analysis": "This vulnerability allows remote attackers to execute arbitrary code...",
+        "description": "Apache HTTP Server 2.4.49 has a path traversal vulnerability...",
+        "arguments": [
+          {
+            "key": "CVE-ID",
+            "value": "CVE-2021-41773"
+          },
+          {
+            "key": "CVSS",
+            "value": "7.5"
+          }
+        ]
+      }
+    ],
+    "total_size": 4,
+    "page": 1,
+    "page_size": 10
+  },
+  "url": "https://intelgraph.idefense.com/#/node/ip/view/"
+}
